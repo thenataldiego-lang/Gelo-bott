@@ -1,14 +1,21 @@
-name: Build
-on: push
+name: Build Gelo-bott
+
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
+      - name: Setup Geode CLI
+        uses: geode-sdk/setup-cli@v2
+      - name: Setup Geode SDK
+        uses: geode-sdk/setup-sdk@v2
       - name: Build
-        uses: geode-sdk/build-geode-mod@main
+        run: |
+          geode build --config Release
       - uses: actions/upload-artifact@v4
         with:
           name: build
