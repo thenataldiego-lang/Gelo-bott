@@ -1,33 +1,9 @@
 {
 	"geode": "4.6.1",
-	"gd": {
-		"win": "*",
-		"android": "*",
-		"mac": "*"
-	},
+	"gd": "*",
 	"id": "gela.extreme-ai",
 	"name": "Gela Extreme AI",
 	"version": "v1.0.0",
 	"developer": "Gela",
-	"description": "Extreme Demon AI - No Replay",
-	"tags": ["gameplay", "bot"],
-	"dependencies": {}
-}{
-	"geode": "4.6.1",
-	"gd": {
-		"android": "*",
-		"win": "*"
-	},
-	"id": "gela.extreme-ai",
-	"name": "Gela Extreme AI",
-	"version": "v1.0.0",
-	"developer": "Gela",
-	"description": "Extreme Demon AI - No Replay",
-	"dependencies": [
-		{
-			"id": "geode.node-ids",
-			"version": ">=1.0.0"
-		}
-	]
-
+	"description": "Extreme Demon AI"
 }
