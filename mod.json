@@ -1,9 +1,19 @@
 {
 	"geode": "4.6.1",
-	"gd": "*",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074"
+	},
 	"id": "gela.extreme-ai",
 	"name": "Gela Extreme AI",
 	"version": "v1.0.0",
 	"developer": "Gela",
-	"description": "Extreme Demon AI"
+	"description": "Extreme Demon AI - No Replay",
+	"dependencies": {
+		"geode.node-ids": {
+			"version": ">=1.0.0",
+			"importance": "required"
+		}
+	}
 }
